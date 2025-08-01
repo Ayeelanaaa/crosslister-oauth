@@ -183,10 +183,10 @@
                     `;
                     document.getElementById('success-content').style.display = 'block';
                     
-                    // Auto-close after 10 seconds (increased for debugging)
-                    setTimeout(() => {
-                        window.close();
-                    }, 10000);
+                    // Don't auto-close during debugging
+                    // setTimeout(() => {
+                    //     window.close();
+                    // }, 10000);
                     
                 } catch (e) {
                     // Fallback to manual copy/paste
